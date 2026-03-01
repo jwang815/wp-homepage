@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Waypoint Journeys — Webflow Custom JavaScript
+   Paste this into: Site Settings > Custom Code > Before </body> tag
+   wrapped in <script> tags, OR add as page-level custom code.
+   ========================================================================== */
+
+// ========== Hero Slideshow ==========
+(function() {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length === 0) return;
+  let current = 0;
+  const total = slides.length;
+
+  function nextSlide() {
+    slides[current].classList.remove('active');
+    slides[current].querySelector('img').style.transform = 'scale(1.05)';
+    current = (current + 1) % total;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(nextSlide, 6000);
+})();
+
+// ========== Navigation Scroll ==========
+(function() {
+  var nav = document.getElementById('mainNav');
+  if (!nav) return;
+  var ticking = false;
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (window.scrollY > 80) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+
+// ========== Mobile Menu ==========
+(function() {
+  var hamburger = document.getElementById('hamburger');
+  var mobileMenu = document.getElementById('mobileMenu');
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+
+  window.closeMobileMenu = function() {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+})();
+
+// ========== Scroll Reveal (IntersectionObserver) ==========
+(function() {
+  var reveals = document.querySelectorAll('.reveal');
+  if (reveals.length === 0) return;
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  reveals.forEach(function(el) {
+    if (!el.closest('.hero')) {
+      observer.observe(el);
+    }
+  });
+})();
+
+// ========== Parallax Hero ==========
+(function() {
+  var hero = document.getElementById('hero');
+  if (!hero) return;
+  var heroContent = hero.querySelector('.hero-content');
+  if (!heroContent) return;
+  var ticking = false;
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        var scrolled = window.scrollY;
+        var heroHeight = hero.offsetHeight;
+        if (scrolled < heroHeight) {
+          var parallaxAmount = scrolled * 0.35;
+          var opacityReduction = 1 - (scrolled / heroHeight) * 0.6;
+          heroContent.style.transform = 'translateY(' + parallaxAmount + 'px)';
+          heroContent.style.opacity = Math.max(opacityReduction, 0);
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+
+// ========== Smooth Anchor Scrolling ==========
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    var target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      var navHeight = document.getElementById('mainNav').offsetHeight;
+      var targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight;
+      window.scrollTo({ top: targetPos, behavior: 'smooth' });
+    }
+  });
+});

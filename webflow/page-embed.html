@@ -1,0 +1,242 @@
+<!--
+  ============================================================================
+  WEBFLOW PAGE CONTENT — HTML Embed
+  ============================================================================
+
+  HOW TO USE:
+  There are TWO approaches. Pick the one that works best for you:
+
+  APPROACH A — Single HTML Embed (Easiest, 100% match guaranteed)
+  1. In Webflow, create a new blank page
+  2. Add a single "Embed" (HTML) element to the page body
+  3. Paste this ENTIRE file into that embed
+  4. Make sure head-code.html is in Site Settings > Head Code
+  5. Make sure body-code.html is in Site Settings > Before </body> tag
+  6. Publish and verify
+
+  APPROACH B — Section-by-Section Embeds (More Webflow-native)
+  1. Create separate Embed elements for each section
+  2. Copy each section below (marked with comments) into its own Embed
+  3. This gives you more control over individual sections in the Webflow Designer
+
+  ============================================================================
+-->
+
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="wp-nav" id="mainNav">
+  <a href="https://www.wpjourneys.com/" class="nav-logo" aria-label="Waypoint Journeys Home" target="_top">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" stroke="#C4944A" stroke-width="1.5" fill="none"/>
+      <circle cx="24" cy="24" r="16" stroke="#C4944A" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <line x1="24" y1="2" x2="24" y2="46" stroke="#C4944A" stroke-width="0.8" opacity="0.4"/>
+      <line x1="2" y1="24" x2="46" y2="24" stroke="#C4944A" stroke-width="0.8" opacity="0.4"/>
+      <polygon points="24,6 26.5,20 24,18 21.5,20" fill="#C4944A"/>
+      <polygon points="24,42 26.5,28 24,30 21.5,28" fill="#C4944A" opacity="0.5"/>
+      <polygon points="6,24 20,21.5 18,24 20,26.5" fill="#C4944A" opacity="0.5"/>
+      <polygon points="42,24 28,21.5 30,24 28,26.5" fill="#C4944A" opacity="0.5"/>
+      <circle cx="24" cy="24" r="3" fill="#C4944A"/>
+    </svg>
+    <span class="nav-logo-text">Waypoint Journeys</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#philosophy">Our Approach</a></li>
+    <li><a href="#expeditions">Expeditions</a></li>
+    <li><a href="#testimonial">Stories</a></li>
+    <li><a href="mailto:admin@wpjourneys.com" class="nav-cta-btn">Inquire</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#philosophy" onclick="closeMobileMenu()">Our Approach</a>
+  <a href="#expeditions" onclick="closeMobileMenu()">Expeditions</a>
+  <a href="#testimonial" onclick="closeMobileMenu()">Stories</a>
+  <a href="mailto:admin@wpjourneys.com" onclick="closeMobileMenu()">Inquire</a>
+</div>
+
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="hero-slide active">
+    <img src="https://images.unsplash.com/photo-1682686581660-3693f0c588d2?w=1600&q=80" alt="Desert expedition with winding trail and 4x4 vehicle">
+  </div>
+  <div class="hero-slide">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80" alt="Dramatic canyon landscape at golden hour">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow reveal visible">LUXURY EXPEDITIONS TO THE WORLD'S LAST WILD PLACES</p>
+    <h1 class="hero-title reveal visible">Where the Map Ends,<br>the Journey Begins</h1>
+    <p class="hero-subtitle reveal visible">Bringing You Luxury Off the Beaten Path</p>
+  </div>
+  <div class="scroll-indicator">
+    <span>Explore</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ==================== PHILOSOPHY ==================== -->
+<section class="philosophy" id="philosophy">
+  <div class="philosophy-grid">
+    <div class="philosophy-content reveal">
+      <span class="section-label">THE WAYPOINT DIFFERENCE</span>
+      <div class="gold-rule"></div>
+      <h2 class="philosophy-title">Not All Who Wander Are Lost — But the Best Ones Are</h2>
+      <p class="philosophy-text">
+        We believe the world's most extraordinary places are the ones most people will never see. Waypoint Journeys exists to take you there — not as a tourist, but as a traveler. Every expedition is hand-crafted from the ground up by our team of destination specialists and local experts who call these remote corners of the world home.
+      </p>
+      <p class="philosophy-text">
+        Our groups never exceed 12 guests. This isn't mass tourism repackaged with a luxury label — it's the antithesis of it. We set up private camps beneath desert stars, arrange dinners in thousand-year-old ruins, and partner with boutique lodges and glamping operators who share our obsession with detail and authenticity.
+      </p>
+      <p class="philosophy-text">
+        From the Karakoram Highway to the Dragon Blood forests of Socotra, from ancient mountain kingdoms to destinations we haven't announced yet — we go where the guidebooks end. Every itinerary is bespoke. Every experience is unrepeatable. That's the Waypoint promise.
+      </p>
+    </div>
+    <div class="philosophy-image reveal reveal-delay-1">
+      <img src="https://images.unsplash.com/photo-1587135941948-670b381f08ce?w=800&q=80" alt="Clifftop ruins with glamping tents above the clouds">
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== EXPEDITIONS ==================== -->
+<section class="expeditions" id="expeditions">
+  <div class="expeditions-header">
+    <span class="section-label light reveal">UPCOMING EXPEDITIONS</span>
+    <h2 class="expeditions-title reveal reveal-delay-1">Choose Your Next Chapter</h2>
+  </div>
+  <div class="expeditions-grid">
+
+    <!-- Socotra -->
+    <a href="https://www.wpjourneys.com/socotra2026" class="expedition-card reveal">
+      <img class="expedition-card-img" src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&q=80" alt="Tropical lagoon aerial view, Socotra Island">
+      <div class="expedition-card-overlay"></div>
+      <div class="expedition-card-content">
+        <span class="expedition-card-tag">Featured Expedition</span>
+        <h3 class="expedition-card-name">Socotra Island</h3>
+        <p class="expedition-card-subtitle">The Alien Island</p>
+        <p class="expedition-card-details">
+          <span>April 2026</span>
+          <span class="separator">&middot;</span>
+          <span>From $2,950</span>
+        </p>
+        <span class="expedition-card-link">
+          View Expedition
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Pakistan -->
+    <div class="expedition-card reveal reveal-delay-1">
+      <img class="expedition-card-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80" alt="Dramatic canyon at golden hour, Pakistan">
+      <div class="expedition-card-overlay"></div>
+      <div class="expedition-card-content">
+        <span class="expedition-card-tag">Coming Fall 2026</span>
+        <h3 class="expedition-card-name">Pakistan</h3>
+        <p class="expedition-card-subtitle">The Hidden Kingdom</p>
+        <p class="expedition-card-details">
+          <span>Fall 2026</span>
+          <span class="separator">&middot;</span>
+          <span>Coming Soon</span>
+        </p>
+        <span class="expedition-card-link">
+          Coming Soon
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ==================== STATS STRIP ==================== -->
+<section class="stats" id="stats">
+  <img class="stats-bg" src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=800&q=80" alt="Arctic aurora with expedition vessel" loading="lazy">
+  <div class="stats-overlay"></div>
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-number">12</div>
+      <div class="stat-label">Maximum Group Size</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-number">40+</div>
+      <div class="stat-label">Countries Explored</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Bespoke Itineraries</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-number">24/7</div>
+      <div class="stat-label">On-Ground Support</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== TESTIMONIAL ==================== -->
+<section class="testimonial" id="testimonial">
+  <div class="testimonial-inner reveal">
+    <div class="testimonial-gold-line"></div>
+    <blockquote class="testimonial-quote">
+      Waypoint Journeys showed us a Socotra that doesn't exist in any guidebook. This wasn't travel — it was transformation.
+    </blockquote>
+    <cite class="testimonial-attribution">— Previous Expedition Guest</cite>
+  </div>
+</section>
+
+
+<!-- ==================== CTA ==================== -->
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <span class="section-label light reveal">BEGIN YOUR STORY</span>
+    <h2 class="cta-title reveal reveal-delay-1">Your Next Chapter Awaits</h2>
+    <p class="cta-text reveal reveal-delay-2">Every journey begins with a single conversation. Tell us where you dream of going, and we'll show you a world beyond imagination.</p>
+    <a href="mailto:admin@wpjourneys.com" class="cta-email reveal reveal-delay-2">admin@wpjourneys.com</a>
+    <br>
+    <a href="mailto:admin@wpjourneys.com?subject=Expedition%20Inquiry" class="cta-button reveal reveal-delay-3">INQUIRE ABOUT AN EXPEDITION</a>
+  </div>
+</section>
+
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="wp-footer">
+  <div class="footer-logo">
+    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="24" cy="24" r="22" stroke="#C4944A" stroke-width="1.5" fill="none" opacity="0.6"/>
+      <circle cx="24" cy="24" r="16" stroke="#C4944A" stroke-width="0.8" fill="none" opacity="0.3"/>
+      <line x1="24" y1="2" x2="24" y2="46" stroke="#C4944A" stroke-width="0.8" opacity="0.3"/>
+      <line x1="2" y1="24" x2="46" y2="24" stroke="#C4944A" stroke-width="0.8" opacity="0.3"/>
+      <polygon points="24,6 26.5,20 24,18 21.5,20" fill="#C4944A" opacity="0.6"/>
+      <circle cx="24" cy="24" r="3" fill="#C4944A" opacity="0.6"/>
+    </svg>
+    <span class="footer-logo-text">Waypoint Journeys</span>
+  </div>
+  <div class="footer-social">
+    <!-- Instagram -->
+    <a href="https://instagram.com/waypoint.journeys" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    </a>
+    <!-- Facebook -->
+    <a href="https://facebook.com/waypointjourneys" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385h-3.047v-3.47h3.047v-2.642c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385c5.737-.9 10.125-5.864 10.125-11.854z"/>
+      </svg>
+    </a>
+  </div>
+  <p class="footer-tagline">Luxury adventure travel to the world's last wild places.</p>
+  <p class="footer-copy">&copy; 2026 Waypoint Journeys. All rights reserved.</p>
+</footer>
