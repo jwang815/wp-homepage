@@ -936,9 +936,9 @@
         grid-template-columns: repeat(2, 1fr);
       }
       .expeditions-grid .expedition-card:last-child {
-        grid-column: 1 / -1;
-        max-width: 50%;
-        margin: 0 auto;
+        grid-column: auto;
+        max-width: 100%;
+        margin: 0;
       }
     }
 
@@ -977,6 +977,8 @@
       }
       .expeditions-grid .expedition-card:last-child {
         max-width: 100%;
+        grid-column: auto;
+        margin: 0;
       }
       .expedition-card {
         aspect-ratio: 4/5;
