@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title>Ouidah sacred grove illustration</title>
+  <desc>Stylized sacred forest and shrine scene in Ouidah.</desc>
+  <defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#162836"/><stop offset="100%" stop-color="#D78450"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g2)"/>
+  <circle cx="604" cy="166" r="70" fill="#F6D08A" opacity="0.92"/>
+  <path d="M0 402c94-34 162-46 252-38 89 9 135 46 210 46 77 0 130-24 174-52 48-29 85-45 164-56v298H0z" fill="#1D3C2F"/>
+  <g transform="translate(152 182)">
+    <rect x="208" y="204" width="12" height="154" fill="#241C17"/>
+    <path d="M214 56c54 0 96 42 104 96 42 0 76 31 76 70 0 18-7 36-18 50H46c-12-14-18-32-18-51 0-39 33-71 74-72 10-54 57-93 112-93z" fill="#173326"/>
+    <path d="M166 258c30-34 62-46 116-46 56 0 95 18 126 46" fill="none" stroke="#C4944A" stroke-width="4" opacity="0.8"/>
+    <rect x="192" y="272" width="96" height="84" fill="#A55B36"/>
+    <path d="M240 272v84M192 314h96" stroke="#F5EDE0" stroke-width="3" opacity="0.45"/>
+  </g>
+</svg>

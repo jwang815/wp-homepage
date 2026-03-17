@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title>Ghana, Benin and Togo expedition card illustration</title>
+  <desc>Vertical illustration of a West African coast with stilt homes, palms, and a fort at sunset.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#10243A"/>
+      <stop offset="45%" stop-color="#1B5967"/>
+      <stop offset="100%" stop-color="#E0A65A"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A7D8E"/>
+      <stop offset="100%" stop-color="#15323A"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="620" cy="280" r="128" fill="#F8D38B" opacity="0.95"/>
+  <path d="M0 690c114-44 199-60 290-47 88 12 151 54 243 50 92-4 156-42 367-122v529H0z" fill="#234658" opacity="0.8"/>
+  <path d="M0 794c132-18 233-8 329 29 83 31 133 50 221 50 96 0 184-22 350-11v338H0z" fill="url(#water)"/>
+  <g transform="translate(72 626)">
+    <rect x="26" y="116" width="10" height="142" fill="#4D2C1E"/>
+    <rect x="118" y="134" width="10" height="124" fill="#4D2C1E"/>
+    <rect x="212" y="120" width="10" height="138" fill="#4D2C1E"/>
+    <path d="M0 136 86 86 170 136z" fill="#D9AB6A"/>
+    <rect x="14" y="136" width="146" height="82" rx="3" fill="#C4944A"/>
+    <path d="M160 146 246 98 316 146z" fill="#E4B777"/>
+    <rect x="176" y="146" width="120" height="72" rx="3" fill="#C28A52"/>
+  </g>
+  <g transform="translate(562 608)">
+    <rect x="162" y="86" width="12" height="266" fill="#38261A"/>
+    <path d="M0 280h224v74H0z" fill="#ECD9B4"/>
+    <path d="M0 240h140v40H0z" fill="#F5E6C9"/>
+    <path d="M18 218 54 188 90 218z" fill="#F0D6A0"/>
+    <path d="M70 218 114 172 158 218z" fill="#F7E6BE"/>
+    <rect x="172" y="104" width="42" height="250" fill="#E9D3A3"/>
+    <path d="M172 104 193 78 214 104z" fill="#F7E5C2"/>
+  </g>
+  <path d="M0 914c76 30 136 42 193 42 76 0 141-21 216-28 73-6 137 4 233 38 92 33 166 43 258 35" fill="none" stroke="#F5EDE0" stroke-width="4" opacity="0.55" stroke-linecap="round"/>
+</svg>

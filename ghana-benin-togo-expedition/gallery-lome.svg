@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title>Lome illustration</title>
+  <desc>Stylized market and boulevard scene in Lome.</desc>
+  <defs><linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#173447"/><stop offset="100%" stop-color="#E19F5C"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#g3)"/>
+  <circle cx="170" cy="150" r="58" fill="#F7D389"/>
+  <path d="M0 404c124-24 214-24 318 12 91 32 149 58 238 58 84 0 150-18 244-50v168H0z" fill="#2A6B74"/>
+  <g transform="translate(76 246)">
+    <rect x="20" y="108" width="172" height="124" rx="4" fill="#C17A47"/>
+    <path d="M8 108 108 38 204 108z" fill="#DDA061"/>
+    <rect x="236" y="88" width="144" height="144" fill="#E0C08A"/>
+    <path d="M236 88 308 34 380 88z" fill="#F0D5A5"/>
+    <path d="M432 230c46-24 78-34 110-34 34 0 66 12 112 42" fill="none" stroke="#F5EDE0" stroke-width="4" opacity="0.7" stroke-linecap="round"/>
+    <circle cx="88" cy="156" r="18" fill="#8A3F2A"/>
+    <circle cx="138" cy="156" r="18" fill="#E7C98A"/>
+    <circle cx="328" cy="150" r="22" fill="#2A7D8E"/>
+  </g>
+</svg>
